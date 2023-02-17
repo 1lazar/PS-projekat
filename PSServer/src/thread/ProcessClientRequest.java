@@ -113,6 +113,7 @@ public class ProcessClientRequest extends Thread {
                             break;
                         case SAVE_TERMIN_PREGLEDA:
                             TerminPregleda tp = (TerminPregleda) request.getArgument();
+                            System.out.println(tp);
                             Controller.getInstance().saveTerminPregleda(tp);
                             response = new Response(tp, null);
                             break;

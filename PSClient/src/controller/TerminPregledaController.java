@@ -130,6 +130,7 @@ public class TerminPregledaController {
                     int id = Communication.getInstance().maxIdTP();
                     SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
                     Date datum = sdf.parse(tpForm.getPoljeDatum().getText().trim());
+                    System.out.println(datum);
                     Opticar opticar = (Opticar) tpForm.getComboOpticar().getSelectedItem();
                     Pacijent pacijent = (Pacijent) tpForm.getComboPacijent().getSelectedItem();
                     ut = (UslugeTabele) tpForm.getTabelaUsluge().getModel();
